@@ -1,0 +1,11 @@
+count_lines.sh:
+  name: pipeline_name
+  looper_args: False
+  arguments:
+    "": file
+  resources:
+    default:
+      file_size: "0"
+      cores: "1"
+      mem: "1000"
+      time: "01:00:00"

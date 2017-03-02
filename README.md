@@ -2,6 +2,12 @@
 
 This repository gives you a basic example looper project.
 
+### Links to looper project info
+
+ * Public-facing permalink: http://databio.org/looper
+ * Documentation: [Read the Docs](http://looper.readthedocs.org/)
+ * Source code: http://github.com/epigen/looper
+
 ### Run the example:
 
 ```
@@ -27,3 +33,8 @@ Looper reads the [project_config.yaml](project_config.yaml) file, which points t
  * the `pipelines_dir`, which is [pipedir](pipedir), where the pipeline code lives.
 
  For this example the `pipelines_dir` is included locally, but in practice this is usually a separate folder (you can point to anything). In this case, it contains a very simple pipeline that counts the number of lines in an input file called [count_lines.sh](pipedir/pipelines/count_lines.sh).
+
+
+### More information
+
+Learn more of the advanced features of looper on the official [Read the Docs](http://looper.readthedocs.org/) pages.

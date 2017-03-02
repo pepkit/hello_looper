@@ -21,6 +21,9 @@ The results will be saved in your `$HOME/hello_looper_results` folder
 
 ### How it works:
 
-This repository has a very simple pipeline that counts the number of lines in an input file. 
+Looper reads the [project_config.yaml](project_config.yaml) file, which points to a few things:
+ * the [sample_annotation.csv](sample_annotation.csv) file, which specifies a few samples, their type, and data file
+ * the `output_dir`, which is where looper results are saved
+ * the `pipelines_dir`, which is [pipedir](pipedir), where the pipeline code lives.
 
-Looper reads the [project_config.yaml](project_config.yaml) file, which points to the [sample_annotation.csv](sample_annotation.csv) file. 
+ For this example the `pipelines_dir` is included locally, but in practice this is usually a separate folder (you can point to anything). In this case, it contains a very simple pipeline that counts the number of lines in an input file called [count_lines.sh](pipedir/pipelines/count_lines.sh).

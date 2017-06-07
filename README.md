@@ -2,12 +2,12 @@
 
 This repository gives you a basic example looper project. Requires looper version >= 0.6.0.
 
-### Run the example:
+### Run the example
 
 1. Install the latest version of looper:
 
 ```
-pip install --user https://github.com/epigen/looper/zipball/master
+pip install --user --upgrade https://github.com/epigen/looper/zipball/master
 ```
 
 2. Download and unzip this repository
@@ -24,9 +24,9 @@ cd hello_looper-master
 looper run project_config.yaml
 ```
 
-The results will be saved `$HOME/hello_looper_results`.
+You should see output that looks like [this](output.md). Results will be saved in `$HOME/hello_looper_results`. 
 
-### How it works:
+### How it works
 
 Looper reads the [project_config.yaml](project_config.yaml) file, which points to a few things:
  * the [sample_annotation.csv](sample_annotation.csv) file, which specifies a few samples, their type, and data file

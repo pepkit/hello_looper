@@ -24,7 +24,7 @@ cd hello_looper-master
 looper run project/project_config.yaml
 ```
 
-### Check out results.
+### Check out results
 
 You should see output that looks like [this](output.txt). Results will be saved in `$HOME/hello_looper_results`. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which (duh!) counts the number of lines in an input file. Our input files (located in [data/](data)) were each passed to the pipeline, which counted and reported the number of lines in each file.
 

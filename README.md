@@ -1,6 +1,6 @@
 # Hello World! example for looper
 
-This repository gives you a basic example looper project.
+This repository gives you a basic example looper project. Requires looper version >= 0.6.0.
 
 ### Run the example:
 

@@ -30,8 +30,8 @@ You should see output that looks like [this](output.txt). Results will be saved 
 
 ### How it works
 
-Looper reads the [project_config.yaml](project_config.yaml) file, which points to a few things:
- * the [sample_annotation.csv](sample_annotation.csv) file, which specifies a few samples, their type, and path to data file
+Looper reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
+ * the [project/sample_annotation.csv](project/sample_annotation.csv) file, which specifies a few samples, their type, and path to data file
  * the `output_dir`, which is where looper results are saved
  * the `pipeline_interface.yaml` file, ([pipeline/pipeline_interface.yaml](pipeline/pipeline_interface.yaml)), which tells looper how to connect to the pipeline (which is also in [pipeline/](pipeline/)).
 

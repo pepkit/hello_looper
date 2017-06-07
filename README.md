@@ -21,20 +21,21 @@ unzip master.zip
 
 ```
 cd hello_looper-master
-looper run project_config.yaml
+looper run project/project_config.yaml
 ```
 
-You should see output that looks like [this](output.txt). Results will be saved in `$HOME/hello_looper_results`. 
+### Check out results.
+
+You should see output that looks like [this](output.txt). Results will be saved in `$HOME/hello_looper_results`. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which (duh!) counts the number of lines in an input file. Our input files (located in [data/](data)) were each passed to the pipeline, which counted and reported the number of lines in each file.
 
 ### How it works
 
 Looper reads the [project_config.yaml](project_config.yaml) file, which points to a few things:
- * the [sample_annotation.csv](sample_annotation.csv) file, which specifies a few samples, their type, and data file
+ * the [sample_annotation.csv](sample_annotation.csv) file, which specifies a few samples, their type, and path to data file
  * the `output_dir`, which is where looper results are saved
- * the `pipeline_interface.yaml` file, which is [pipedir/pipeline_interface.yaml](pipedir/pipeline_interface.yaml), which tells looper about how to connect to the pipeline (which is also in [pipedir/](pipedir)).
+ * the `pipeline_interface.yaml` file, ([pipeline/pipeline_interface.yaml](pipeline/pipeline_interface.yaml)), which tells looper how to connect to the pipeline (which is also in [pipeline/](pipeline/)).
 
- For this example the pipeline is included locally, but in practice, is usually in a separate folder (you can point to anything). You may also include more than one pipeline interface in your `project_config.yaml`. In this case, it contains a very simple pipeline that counts the number of lines in an input file called [count_lines.sh](pipedir/pipelines/count_lines.sh).
-
+The 3 folders (`data`, `project`, and `pipeline`) are modular; There is no need for these to live in any predetermined folder structure. For this example, the data and pipeline are included locally, but in practice, they are usually in a separate folder; you can point to anything. You may also include more than one pipeline interface in your `project_config.yaml`, so in a looper project, many-to-many relationships are possible.
 
 ### More information
 

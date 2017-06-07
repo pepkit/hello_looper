@@ -24,7 +24,7 @@ cd hello_looper-master
 looper run project_config.yaml
 ```
 
-You should see output that looks like [this](output.md). Results will be saved in `$HOME/hello_looper_results`. 
+You should see output that looks like [this](output.txt). Results will be saved in `$HOME/hello_looper_results`. 
 
 ### How it works
 

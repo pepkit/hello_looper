@@ -1,6 +1,6 @@
 # Hello World! example for looper
 
-This repository gives you a basic example looper project. Requires looper version >= 0.6.0.
+This repository gives you a basic example looper project. Requires looper version >= 0.6.0. It also contains a list of [looper compatible pipelines](looper_pipelines.md).
 
 ### Run the example
 
@@ -42,4 +42,6 @@ The 3 folders (`data`, `project`, and `pipeline`) are modular; there is no need 
 
 ### More information
 
-Full Documentation at Read the Docs: http://looper.readthedocs.io
+* Full Documentation at Read the Docs: http://looper.readthedocs.io
+* Find fully functional pipelines on the [list of looper compatible pipelines](looper_pipelines.md).
+

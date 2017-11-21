@@ -1,6 +1,6 @@
 # Publicly available looper-compatible pipelines
 
-Pipelines on this list should be runnable on projects defined using the [standard looper project format](http://looper.readthedocs.io/en/latest/define-your-project.html).
+Pipelines on this list should be runnable on projects defined using the [standard PEP project format](https://pepkit.github.io/docs/home/).
 
 * https://github.com/epigen/open_pipelines - A collection of pipelines to process diverse sequencing data types, including ATAC-seq, RNA-seq, and others.
 * https://github.com/databio/rnapipe - A set of pipelines specifically for processing RNA.

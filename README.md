@@ -29,7 +29,7 @@ looper run project/project_config.yaml
 You should see output that looks like [this](output.txt). Here's what you've just accomplished:
 
 This repository has 3 components (corresponding to the 3 subfolders):
- * `/project` -- contains 2 files that describe metadata for the project (`project_config.yaml`) and the samples (`sample_annotation.csv`). This particular project describes just two samples listed in the annotation file.
+ * `/project` -- contains 2 files that describe metadata for the project (`project_config.yaml`) and the samples (`sample_annotation.csv`). This particular project describes just two samples listed in the annotation file. These files together make up a [PEP](http://pepkit.github.io)-formatted project, and can therefore be read by any PEP-compatible tool, including `looper`.
  * `/data` -- contains 2 data files for 2 samples. These input files were each passed to the pipeline.
  * `/pipeline` -- contains the script we want to run on each sample in our project. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which (duh!) counts the number of lines in an input file.
 

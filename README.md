@@ -44,6 +44,7 @@ The 3 folders (`data`, `project`, and `pipeline`) are modular; there is no need 
 
 ### More information
 
-* Full Documentation at Read the Docs: http://looper.readthedocs.io
+* Full looper documentation at Read the Docs: http://looper.readthedocs.io
+* Detailed description of PEP project format: http://pepkit.github.io
 * Find fully functional pipelines on the [list of looper compatible pipelines](looper_pipelines.md).
 

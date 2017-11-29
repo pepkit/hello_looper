@@ -1,6 +1,6 @@
 # Hello World! example for looper
 
-This repository contains a basic functional example [PEP project](http://pepkit.github.io) and a [looper-compatible](http://looper.readthedocs.io) pipeline that can run on that project. It also contains a list of [looper compatible pipelines](looper_pipelines.md).
+This repository contains a basic functional example [PEP project](http://pepkit.github.io) (in [/project](/project)) and a [looper-compatible](http://looper.readthedocs.io) pipeline (in [/pipeline](/pipeline)) that can run on that project. It also contains a list of [looper compatible pipelines](looper_pipelines.md).
 
 These instructions will show you how to install looper and use it to run the included pipeline on the included PEP project. 
 
@@ -9,13 +9,13 @@ These instructions will show you how to install looper and use it to run the inc
 1. Install the latest version of looper (this pipeline requires looper version >= 0.6.0):
 
 ```
-pip install --user --upgrade https://github.com/epigen/looper/zipball/master
+pip install --user --upgrade https://github.com/pepkit/looper/zipball/master
 ```
 
 2. Download and unzip this repository
 
 ```
-wget https://github.com/databio/hello_looper/archive/master.zip
+wget https://github.com/pepkit/hello_looper/archive/master.zip
 unzip master.zip
 ```
 

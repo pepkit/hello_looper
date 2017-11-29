@@ -1,10 +1,12 @@
 # Hello World! example for looper
 
-This repository gives you a basic example looper project. Requires looper version >= 0.6.0. It also contains a list of [looper compatible pipelines](looper_pipelines.md).
+This repository contains a basic functional example [PEP project](http://pepkit.github.io) and a [looper-compatible](http://looper.readthedocs.io) pipeline that can run on that project. It also contains a list of [looper compatible pipelines](looper_pipelines.md).
+
+These instructions will show you how to install looper and use it to run the included pipeline on the included PEP project. 
 
 ### Run the example
 
-1. Install the latest version of looper:
+1. Install the latest version of looper (this pipeline requires looper version >= 0.6.0):
 
 ```
 pip install --user --upgrade https://github.com/epigen/looper/zipball/master

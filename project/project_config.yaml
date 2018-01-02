@@ -1,4 +1,4 @@
 metadata:
   sample_annotation: sample_annotation.csv
   output_dir: $HOME/hello_looper_results
-  pipelines_dir: [../pipeline/pipeline_interface.yaml]
+  pipeline_interfaces: [../pipeline/pipeline_interface.yaml]

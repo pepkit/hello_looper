@@ -1,10 +1,8 @@
 # Hello World! example for looper
 
-This repository contains a basic functional example [PEP project](http://pepkit.github.io) (in [/project](/project)) and a [looper-compatible](http://looper.readthedocs.io) pipeline (in [/pipeline](/pipeline)) that can run on that project. It also contains a list of [looper compatible pipelines](looper_pipelines.md).
+`Looper` is a pipeline submission engine (see [looper source code](https://github.com/pepkit/looper); [looper documentation](http://looper.readthedocs.org)). This repository contains a basic functional example project (in [/project](/project)) and a looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. This repository demonstrates how to install `looper` and use it to run the included pipeline on the included PEP project. 
 
-These instructions will show you how to install looper and use it to run the included pipeline on the included PEP project. 
-
-### Run the example
+## Run the example
 
 1. Install the latest version of looper (this pipeline requires looper version >= 0.6.0):
 
@@ -26,7 +24,7 @@ cd hello_looper-master
 looper run project/project_config.yaml
 ```
 
-### How it works
+## How it works
 
 You should see output that looks like [this](output.txt). Here's what you've just accomplished:
 
@@ -42,7 +40,7 @@ When we invoke `looper` from the command line we told it to `run project/project
 
 The 3 folders (`data`, `project`, and `pipeline`) are modular; there is no need for these to live in any predetermined folder structure. For this example, the data and pipeline are included locally, but in practice, they are usually in a separate folder; you can point to anything (so data, pipelines, and projects may reside in distinct spaces on disk). You may also include more than one pipeline interface in your `project_config.yaml`, so in a looper project, many-to-many relationships are possible.
 
-### More information
+## More information
 
 * Full looper documentation at Read the Docs: http://looper.readthedocs.io
 * Detailed description of PEP project format: http://pepkit.github.io

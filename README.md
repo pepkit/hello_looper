@@ -20,7 +20,7 @@ unzip master.zip
 3. Run it:
 
 ```
-cd hello_looper-master
+cd hello_looper
 looper run project/project_config.yaml
 ```
 

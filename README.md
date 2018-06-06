@@ -40,6 +40,20 @@ When we invoke `looper` from the command line we told it to `run project/project
 
 The 3 folders (`data`, `project`, and `pipeline`) are modular; there is no need for these to live in any predetermined folder structure. For this example, the data and pipeline are included locally, but in practice, they are usually in a separate folder; you can point to anything (so data, pipelines, and projects may reside in distinct spaces on disk). You may also include more than one pipeline interface in your `project_config.yaml`, so in a looper project, many-to-many relationships are possible.
 
+## A few more basic looper options
+
+Looper also provides a few other simple arguments that let you adjust what it does. You can find a [complete reference of usage](http://looper.readthedocs.io/en/latest/usage.html) in the docs. Here are a few of the more common options:
+
+For `looper run`:
+- `-d`: Dry run mode (creates submission scripts, but does not execute them) 
+- `--limit`: Only run a few samples 
+
+There are also other commands:
+- `looper check`: checks on the status (running, failed, completed) of your jobs
+- `looper summarize`: produces an output file that summarizes your project results
+- `looper destroy`: completely erases all results so you can restart
+
+
 ## More information
 
 * Full looper documentation at Read the Docs: http://looper.readthedocs.io

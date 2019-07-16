@@ -1,0 +1,6 @@
+args = commandArgs(trailingOnly=TRUE)
+if (length(args)==0) stop("At least one argument must be supplied", call.=FALSE)
+t = read.table(args[1])
+png(file.path(dirname(args[1]),'length_dist.png'))
+hist(t[,1], main='Histogram of line lenghts', xlab='Line length', ylab='Frequency',col='blue')
+dev.off()

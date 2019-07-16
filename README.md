@@ -1,13 +1,13 @@
 # Hello World! example for looper
 
-`Looper` is a pipeline submission engine (see [looper source code](https://github.com/pepkit/looper); [looper documentation](http://looper.readthedocs.org)). This repository contains a basic functional example project (in [/project](/project)) and a looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. This repository demonstrates how to install `looper` and use it to run the included pipeline on the included PEP project. 
+`Looper` is a pipeline submission engine (see [looper source code](https://github.com/pepkit/looper); [looper documentation](http://looper.databio.org)). This repository contains a basic functional example project (in [/project](/project)) and a looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. This repository demonstrates how to install `looper` and use it to run the included pipeline on the included PEP project. 
 
 ## Run the example
 
 1. Install the latest version of looper (this pipeline requires looper version >= 0.6.0):
 
 ```
-pip install --user --upgrade https://github.com/pepkit/looper/zipball/master
+pip install --user --upgrade loopercli
 ```
 
 2. Download and unzip this repository

@@ -59,7 +59,7 @@ There are also other commands:
 
 ## More information
 
-* Full looper documentation at Read the Docs: http://looper.readthedocs.io
-* Detailed description of PEP project format: http://pepkit.github.io
+* Full looper documentation at Read the Docs: http://looper.databio.org
+* Detailed description of PEP project format: http://pep.databio.org
 * Find fully functional pipelines on the [list of looper compatible pipelines](looper_pipelines.md).
 * More example PEP projects: https://github.com/pepkit/example_peps

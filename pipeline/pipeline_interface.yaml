@@ -1,16 +1,5 @@
-protocol_mapping:
-  anySampleType: count_lines.sh
-
-pipelines:
-  count_lines.sh:
-    name: count_lines
+pipeline_name: count_lines
+sample_pipeline:
     path: count_lines.sh  # relative to this pipeline_interface.yaml file
-    looper_args: False
-    arguments:
-      "": file
-    resources:
-      default:
-        file_size: "0"
-        cores: "1"
-        mem: "1000"
-        time: "01:00:00"
+    command_template: >
+      {pipeline.path} {sample.file}

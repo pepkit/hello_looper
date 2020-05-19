@@ -1,6 +1,5 @@
 pipeline_name: count_lines
 pipeline_type: sample
-sample_pipeline:
-    path: count_lines.sh  # relative to this pipeline_interface.yaml file
-    command_template: >
-      {pipeline.path} {sample.file}
+path: count_lines.sh  # relative to this pipeline_interface.yaml file
+command_template: >
+  {pipeline.path} {sample.file}

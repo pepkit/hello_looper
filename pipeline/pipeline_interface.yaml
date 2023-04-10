@@ -1,5 +1,6 @@
 pipeline_name: count_lines
 pipeline_type: sample
-path: count_lines.sh  # relative to this pipeline_interface.yaml file
+var_templates:
+  pipeline: '{looper.piface_dir}/count_lines.sh'
 command_template: >
-  {pipeline.path} {sample.file}
+  {pipeline.var_templates.pipeline} {sample.file}

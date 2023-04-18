@@ -1,3 +1,6 @@
 sample_name,library,file
 frog_1,anySampleType,data/frog1_data.txt
 frog_2,anySampleType,data/frog2_data.txt
+frog_3,anySampleType,data/frog3_data.txt
+frog_4,anySampleType,data/frog4_data.txt
+frog_5,anySampleType,data/frog5_data.txt

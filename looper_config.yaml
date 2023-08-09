@@ -1,4 +1,4 @@
 pep_config: ./project/project_config.yaml # pephub registry path or local path
 output_dir: "./results"
 pipeline_interfaces:
-  sample:  ./hello_looper-master/pipeline/pipeline_interface.yaml
+  sample:  ../pipeline/pipeline_interface.yaml

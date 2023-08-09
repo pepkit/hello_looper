@@ -1,18 +1,18 @@
 # Hello World! example for looper
 
 `Looper` is a pipeline submission engine (see [source code](https://github.com/pepkit/looper) and [documentation](http://looper.databio.org)). This repository demonstrates how to install `looper` and use it to run the included pipeline using PEP project.
-looper can run pipelines using local PEPs and PEPs stored on [PEPhub](pephub.databio.org).
-Because of 2 PEP options this repository contains 2 tutorials - 2 looper config files:
-- A functional basic example of looper config file that is stored locally. (in [/looper_config.yaml](/looper_config.yaml))
-- Same PEP but located on PEPhub: [https://pephub.databio.org/pepkit/hello_looper](https://pephub.databio.org/pepkit/hello_looper?tag=default)
+`Looper` can run pipelines using either local PEPs or PEPs stored on [PEPhub](pephub.databio.org).
+Because of these two PEP options, this repository contains 2 tutorials using 2 different looper config files:
+- A basic example of a local looper config file can be found here: (in [/looper_config.yaml](/looper_config.yaml))
+- The example PEP but located on PEPhub: [https://pephub.databio.org/pepkit/hello_looper](https://pephub.databio.org/pepkit/hello_looper?tag=default)
 
 This repository contains:
-1. A functional basic example of looper config file. (Mentioned above)
-2. Example PEP project (in [/project](/project))
-3. looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. 
+1. A functional, basic example of a looper config file. (Mentioned above)
+2. An example PEP project (in [/project](/project))
+3. A looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. 
 
 ***
-❗ In looper lower than v1.5.0 looper configurations were specified in PEP. In looper>=v1.5.0 This functionality
+❗ In looper versions lower than v1.5.0, looper configurations were specified in PEP. In looper>=v1.5.0 This functionality
 is deprecated and will be removed in future versions. To see old looper configuration hello looper tutorial
 check this folder: [/old_specification](/old_specification)
 ***
@@ -53,9 +53,9 @@ This repository has 3 components (corresponding to the 3 subfolders):
  * `looper_config` -- specification of path to the: PEP, output folder, and pipeline interfaces.
  * `/project` -- contains 2 files that describe metadata for the project (`project_config.yaml`) and the samples (`sample_annotation.csv`). This particular project describes just two samples listed in the annotation file. These files together make up a [PEP](http://pepkit.github.io)-formatted project, and can therefore be read by any PEP-compatible tool, including `looper`.
  * `/data` -- contains 2 data files for 2 samples. These input files were each passed to the pipeline.
- * `/pipeline` -- contains the script we want to run on each sample in our project. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which (duh!) counts the number of lines in an input file.
+ * `/pipeline` -- contains the script we want to run on each sample in our project. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which simply counts the number of lines in an input file.
 
-When we invoke `looper` from the command line we told it to `run looper_config.yaml`. `looper` reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
+When we invoke `looper` from the command line, we told it to `run looper_config.yaml`. `looper` reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
  * the [project/project_config.yaml](project/project_config.yaml) file, which specifies a PEP and points to csv file that contain samples, their type, and path to data file
  * the `output_dir`, which is where looper results are saved. Results will be saved in `$HOME/hello_looper_results`.
  * the `pipeline_interface.yaml` file, ([pipeline/pipeline_interface.yaml](pipeline/pipeline_interface.yaml)), which tells looper how to connect to the pipeline (which is also in [pipeline/](pipeline/)).
@@ -72,7 +72,7 @@ For `looper run`:
 
 There are also other commands:
 - `looper check`: checks on the status (running, failed, completed) of your jobs
-- `looper summarize`: produces an output file that summarizes your project results
+- `looper report`: produces a static html report that summarizes your project results
 - `looper destroy`: completely erases all results so you can restart
 
 

@@ -1,0 +1,11 @@
+project_name: test
+sample_name: frog_1
+schema_path: pipestat_output_schema.yaml
+database:
+  dialect: postgresql
+  driver: psycopg2
+  name: pipestat-test
+  user: postgres
+  password: pipestat-password
+  host: 127.0.0.1
+  port: 5432

@@ -1,5 +1,5 @@
 pipeline_name: count_lines
-pipeline_type: sample
+pipeline_type: project
 var_templates:
   pipeline: '{looper.piface_dir}/count_lines.sh'
 command_template: >

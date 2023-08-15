@@ -36,13 +36,13 @@ unzip master.zip
 
 ```bash
 cd hello_looper
-looper run --looper_config looper_config.yaml
+looper run --looper-config .looper.yaml
 ```
 
 To run project from PEPhub use this configuration file:
 ```bash
 cd hello_looper
-looper run --looper_config looper_pephub.yaml
+looper run --looper-config .looper_pephub.yaml
 ```
 
 ## How it works

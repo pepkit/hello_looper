@@ -1,15 +1,17 @@
 # Hello World! example for looper
 
 `Looper` is a pipeline submission engine (see [source code](https://github.com/pepkit/looper) and [documentation](http://looper.databio.org)). This repository demonstrates how to install `looper` and use it to run the included pipeline using PEP project.
-`Looper` can run pipelines using either local PEPs or PEPs stored on [PEPhub](pephub.databio.org).
-Because of these two PEP options, this repository contains 2 tutorials using 2 different looper config files:
+`Looper` can run pipelines using either local PEPs or PEPs stored on [PEPhub](pephub.databio.org). Looper can also use [Pipestat](https://pipestat.databio.org/en/latest/) to report results to a local file or PostgreSQL database.
+Because of these two PEP options, this repository contains 3 tutorials using 3 different looper config files:
 - A basic example of a local looper config file can be found here: (in [/looper_config.yaml](/looper_config.yaml))
+- A basic example using a pipestat compatible looper config file here: [pipestat_example](/pipestat_example/looper_config_pipestat.yaml)
 - The example PEP but located on PEPhub: [https://pephub.databio.org/pepkit/hello_looper](https://pephub.databio.org/pepkit/hello_looper?tag=default)
 
 This repository contains:
 1. A functional, basic example of a looper config file. (Mentioned above)
-2. An example PEP project (in [/project](/project))
-3. A looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. 
+2. A `pipestat_example` directory, specifically for configuring Looper to work with Pipestat 
+3. An example PEP project (in [/project](/project))
+4. A looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. 
 
 ***
 ❗ In looper versions lower than v1.5.0, looper configurations were specified in PEP. In looper>=v1.5.0 This functionality
@@ -36,13 +38,19 @@ unzip master.zip
 
 ```bash
 cd hello_looper
-looper run --looper_config looper_config.yaml
+looper run --looper-config looper_config.yaml
 ```
 
 To run project from PEPhub use this configuration file:
 ```bash
 cd hello_looper
-looper run --looper_config looper_pephub.yaml
+looper run --looper-config looper_pephub.yaml
+```
+
+To run a pipestat compatible project from this configuration file::
+```bash
+cd hello_looper/pipestat_example
+looper run --looper-config looper_config_pipestat.yaml
 ```
 
 ## How it works
@@ -54,7 +62,7 @@ This repository has 3 components (corresponding to the 3 subfolders):
  * `/project` -- contains 2 files that describe metadata for the project (`project_config.yaml`) and the samples (`sample_annotation.csv`). This particular project describes just two samples listed in the annotation file. These files together make up a [PEP](http://pepkit.github.io)-formatted project, and can therefore be read by any PEP-compatible tool, including `looper`.
  * `/data` -- contains 2 data files for 2 samples. These input files were each passed to the pipeline.
  * `/pipeline` -- contains the script we want to run on each sample in our project. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which simply counts the number of lines in an input file.
-
+ * `/pipestat_example` -- contains looper compatible files.
 When we invoke `looper` from the command line, we told it to `run looper_config.yaml`. `looper` reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
  * the [project/project_config.yaml](project/project_config.yaml) file, which specifies a PEP and points to csv file that contain samples, their type, and path to data file
  * the `output_dir`, which is where looper results are saved. Results will be saved in `$HOME/hello_looper_results`.

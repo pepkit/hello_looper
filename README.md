@@ -37,7 +37,7 @@ unzip master.zip
 ```bash
 cd hello_looper
 
-looper run --looper-config looper_config.yaml
+looper run --looper-config .looper.yaml
 
 ```
 You can also just use `looper run` with no additional argument, since `.looper.yaml` is the default file name. This will use the local PEP.
@@ -46,13 +46,13 @@ To use the sample data from PEPhub, use this configuration file:
 ```bash
 cd hello_looper
 
-looper run --looper-config looper_pephub.yaml
+looper run --looper-config .looper_pephub.yaml
 ```
 
 To run a pipestat compatible project from this configuration file::
 ```bash
 cd hello_looper/pipestat_example
-looper run --looper-config looper_config_pipestat.yaml
+looper run --looper-config .looper.yaml
 
 ```
 
@@ -67,7 +67,7 @@ This repository has 3 components (corresponding to the 3 subfolders):
  * `/pipeline` -- contains the script we want to run on each sample in our project. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which simply counts the number of lines in an input file.
 
  * `/pipestat_example` -- contains looper compatible files.
-When we invoke `looper` from the command line, we told it to `run looper_config.yaml`. `looper` reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
+When we invoke `looper` from the command line, we told it to `run .looper.yaml`. `looper` reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
 
  * the [project/project_config.yaml](project/project_config.yaml) file, which specifies a PEP and points to csv file that contain samples, their type, and path to data file
  * the `output_dir`, which is where looper results are saved. Results will be saved in `$HOME/hello_looper_results`.

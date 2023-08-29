@@ -2,31 +2,8 @@ pep_config: ./project/project_config_pipestat.yaml # pephub registry path or loc
 output_dir: "./results"
 pipeline_interfaces:
   sample:  ./pipeline/pipeline_interface.yaml
-  project: ./pipeline/pipeline_interface_project.yaml
 pipestat:
-  project:
-    project_name: test
-    sample_name: frog_1
-    schema_path: ./pipeline/pipestat_output_schema.yaml
-    results_file_path: "results.yaml"  #this is an absolute path for now
-    database:
-      dialect: postgresql
-      driver: psycopg2
-      name: pipestat-test
-      user: postgres
-      password: pipestat-password
-      host: 127.0.0.1
-      port: 5432
   sample:
-    project_name: test
     sample_name: frog_1
     schema_path: ./pipeline/pipestat_output_schema.yaml
     results_file_path: "results.yaml"  #this is an absolute path for now
-    database:
-      dialect: postgresql
-      driver: psycopg2
-      name: pipestat-test
-      user: postgres
-      password: pipestat-password
-      host: 127.0.0.1
-      port: 5432

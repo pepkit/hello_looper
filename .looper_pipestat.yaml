@@ -2,8 +2,4 @@ pep_config: ./project/project_config.yaml # pephub registry path or local path
 output_dir: "./results"
 pipeline_interfaces:
   sample:  ./pipeline_pipestat/pipeline_interface.yaml
-pipestat:
-  sample:
-    sample_name: frog_1
-    schema_path: ./pipeline_pipestat/pipestat_output_schema.yaml
-    results_file_path: "results.yaml"
+pipestat_config: ./global_pipestat_config.yaml

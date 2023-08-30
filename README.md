@@ -9,7 +9,7 @@ Because of these two PEP options, this repository contains 3 tutorials using 3 d
 
 This repository contains:
 1. A functional, basic example of a looper config file. (Mentioned above)
-2. A `pipestat_example` directory, specifically for configuring Looper to work with Pipestat 
+2. A `pipeline_pipestat` directory, specifically for configuring Looper to work with Pipestat 
 3. An example PEP project (in [/project](/project))
 4. A looper-compatible pipeline (in [/pipeline](/pipeline)) that can run on that project. 
 
@@ -51,8 +51,7 @@ looper run --looper-config .looper_pephub.yaml
 
 To run a pipestat compatible project from this configuration file::
 ```bash
-cd hello_looper/pipestat_example
-looper run --looper-config .looper.yaml
+looper run --looper-config .looper_pipestat.yaml
 
 ```
 
@@ -66,7 +65,7 @@ This repository has 3 components (corresponding to the 3 subfolders):
  * `/data` -- contains 2 data files for 2 samples. These input files were each passed to the pipeline.
  * `/pipeline` -- contains the script we want to run on each sample in our project. Our pipeline is a very simple shell script named [count_lines.sh](pipeline/count_lines.sh), which simply counts the number of lines in an input file.
 
- * `/pipestat_example` -- contains looper compatible files.
+ * `/pipeline_pipestat` -- contains looper compatible files.
 When we invoke `looper` from the command line, we told it to `run .looper.yaml`. `looper` reads the [project/project_config.yaml](project/project_config.yaml) file, which points to a few things:
 
  * the [project/project_config.yaml](project/project_config.yaml) file, which specifies a PEP and points to csv file that contain samples, their type, and path to data file

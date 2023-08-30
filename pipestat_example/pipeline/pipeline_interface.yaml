@@ -1,4 +1,4 @@
-pipeline_name: count_lines
+pipeline_name: example_pipestat_pipeline
 pipeline_type: sample
 var_templates:
   pipeline: '{looper.piface_dir}/count_lines.py'

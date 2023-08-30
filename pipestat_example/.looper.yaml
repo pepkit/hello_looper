@@ -6,4 +6,4 @@ pipestat:
   sample:
     sample_name: frog_1
     schema_path: ./pipeline/pipestat_output_schema.yaml
-    results_file_path: "results.yaml"  #this is an absolute path for now
+    results_file_path: "results.yaml"

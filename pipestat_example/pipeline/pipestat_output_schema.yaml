@@ -2,4 +2,4 @@ pipeline_name: test_pipe
 samples:
   number_of_lines:
     type: integer
-    description: "Number of things"
+    description: "Number of lines in the input file."

@@ -1,9 +1,0 @@
-pep_config: ./project/project_config_pipestat.yaml # pephub registry path or local path
-output_dir: "./results"
-pipeline_interfaces:
-  sample:  ./pipeline/pipeline_interface.yaml
-pipestat:
-  sample:
-    sample_name: frog_1
-    schema_path: ./pipeline/pipestat_output_schema.yaml
-    results_file_path: "results.yaml"

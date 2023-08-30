@@ -1,5 +1,0 @@
-pipeline_name: example_pipestat_pipeline
-var_templates:
-  pipeline: '{looper.piface_dir}/count_lines.py'
-command_template: >
-  python {pipeline.var_templates.pipeline} {sample.file} {sample.sample_name} {pipestat.schema_path} {pipestat.results_file} {pipestat.pipeline_type}

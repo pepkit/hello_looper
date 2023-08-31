@@ -5,12 +5,11 @@ import sys
 # takes arguments invoked during looper submission via command templates
 text_file = sys.argv[1] # this is the sample we wish to process by reading the number of lines
 sample_name = sys.argv[2]
-schema_path = sys.argv[3]
-results_file = sys.argv[4]
+results_file = sys.argv[3]
 
 # Create pipestat manager and then report values
 psm = pipestat.PipestatManager(
-    schema_path=schema_path,
+    schema_path="pipeline_pipestat/pipestat_output_schema.yaml",
     results_file_path=results_file,
     sample_name=sample_name,
     pipeline_type="sample",

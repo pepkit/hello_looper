@@ -1,2 +1,2 @@
-output_schema: ./pipeline_pipestat/pipestat_output_schema.yaml
+schema_path: ./pipeline_pipestat/pipestat_output_schema.yaml
 results_file_path: "results.yaml"

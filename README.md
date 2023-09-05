@@ -49,10 +49,16 @@ cd hello_looper
 looper run --looper-config .looper_pephub.yaml
 ```
 
-To run a pipestat compatible project from this configuration file::
+To run a pipestat compatible project from this configuration file:
 ```bash
 looper run --looper-config .looper_pipestat.yaml
+```
+This will call a pipeline python function (pipeline_pipestat/count_lines.py) which will invoke the pipestat api.
 
+Alternatively, you can also use pipestat within a shell pipeline:
+
+```bash
+looper run --looper-config .looper_pipestat_shell.yaml
 ```
 
 ## How it works

@@ -3,5 +3,4 @@ output_dir: ./results
 pipeline_interfaces:
   sample:  ./pipeline_pipestat/pipeline_interface_shell.yaml
 pipestat:
-  schema_path: ./pipeline_pipestat/pipestat_output_schema.yaml
   results_file_path: results.yaml

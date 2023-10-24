@@ -11,8 +11,7 @@ results_file = sys.argv[3]
 psm = pipestat.PipestatManager(
     schema_path="pipeline_pipestat/pipestat_output_schema.yaml",
     results_file_path=results_file,
-    sample_name=sample_name,
-    pipeline_type="sample",
+    record_identifier=sample_name,
 )
 
 # Read text file and count lines
@@ -20,6 +19,6 @@ with open(text_file, "r") as f:
     result = {"number_of_lines": len(f.readlines())}
 
 # The results are defined in the pipestat output schema.
-psm.report(sample_name=sample_name, values=result)
+psm.report(record_identifier=sample_name, values=result)
 
 # end of pipeline

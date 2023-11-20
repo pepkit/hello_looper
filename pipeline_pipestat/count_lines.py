@@ -3,7 +3,9 @@ import sys
 
 # Very simple pipeline that calls pipestat
 # takes arguments invoked during looper submission via command templates
-text_file = sys.argv[1] # this is the sample we wish to process by reading the number of lines
+text_file = sys.argv[
+    1
+]  # this is the sample we wish to process by reading the number of lines
 sample_name = sys.argv[2]
 results_file = sys.argv[3]
 

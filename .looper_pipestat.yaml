@@ -4,3 +4,4 @@ pipeline_interfaces:
   sample:  ./pipeline_pipestat/pipeline_interface.yaml
 pipestat:
   results_file_path: results.yaml
+  flag_file_dir: results/flags

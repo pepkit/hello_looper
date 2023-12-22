@@ -1,4 +1,4 @@
-pipeline_name: example_pipestat_pipeline
+pipeline_name: test_pipe
 pipeline_type: sample
 output_schema: pipestat_output_schema.yaml
 command_template: >

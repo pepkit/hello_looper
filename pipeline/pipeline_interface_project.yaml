@@ -3,4 +3,4 @@ pipeline_type: project
 var_templates:
   pipeline: '{looper.piface_dir}/count_lines.sh'
 command_template: >
-  {pipeline.var_templates.pipeline} {sample.file}
+  {pipeline.var_templates.pipeline} "data/*.txt"

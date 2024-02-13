@@ -1,0 +1,11 @@
+test_pipe:
+  project: {}
+  sample:
+    frog_1:
+      number_of_lines: 4
+      pipestat_created_time: '2024-02-13 10:53:52'
+      pipestat_modified_time: '2024-02-13 10:53:52'
+    frog_2:
+      number_of_lines: 7
+      pipestat_created_time: '2024-02-13 10:53:53'
+      pipestat_modified_time: '2024-02-13 10:53:53'

@@ -2,10 +2,16 @@
 
 This repository provides minimal working examples for the [looper pipeline submission engine](http://pep.databio.org/looper).
 
-This repository contains:
-1. Example looper config files (*e.g.* `.looper.yaml`).
-2. A basic example PEP project (in [/project](/project)).
-3. A looper-compatible pipeline (in [/pipeline](/pipeline)).
-4. A looper-compatible pipeline using pipestat (in `/pipeline_pipestat`)
+This repository contains examples
 
-Documentation for running the above examples can be found at [Looper: Hello World](https://pep.databio.org/looper/code/hello-world/)
+1. `/basic` - A basic example pipeline and project.
+2. `/pephub` - Example of how to point looper to PEPhub.
+3. `/pipestat` - Example of a pipeline that uses pipestat for recording results.
+
+Each example contains:
+
+1. A looper config file (`.looper.yaml`).
+2. Sample data plus metadata in PEP format (or pointer to PEPhub).
+3. A looper-compatible pipeline.
+
+Explanation and results of running the above examples can be found at [Looper: Hello World](https://pep.databio.org/looper/code/hello-world/)

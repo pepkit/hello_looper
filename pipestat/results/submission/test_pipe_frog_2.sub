@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo 'Compute node:' `hostname`
-echo 'Start time:' `date +'%Y-%m-%d %T'`
-
-{
-python /home/nsheff/code/hello_looper/basic-pipestat/./pipeline_pipestat/count_lines.py data/frog2_data.txt frog_2 /home/nsheff/code/hello_looper/basic-pipestat/./results.yaml  
-} | tee /home/nsheff/code/hello_looper/basic-pipestat/./results/submission/test_pipe_frog_2.log

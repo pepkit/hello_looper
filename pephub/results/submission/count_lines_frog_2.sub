@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo 'Compute node:' `hostname`
-echo 'Start time:' `date +'%Y-%m-%d %T'`
-
-{
-/home/nsheff/code/hello_looper/basic-pephub/pipeline/count_lines.sh data/frog2_data.txt  
-} | tee /home/nsheff/code/hello_looper/basic-pephub/results/submission/count_lines_frog_2.log

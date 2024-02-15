@@ -7,6 +7,7 @@ This repository contains examples
 1. `/basic` - A basic example pipeline and project.
 2. `/pephub` - Example of how to point looper to PEPhub.
 3. `/pipestat` - Example of a pipeline that uses pipestat for recording results.
+4. `/csv` - How to use a pipeline with a CSV sample table (no YAML config)
 
 Each example contains:
 

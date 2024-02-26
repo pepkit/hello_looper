@@ -1,4 +1,4 @@
-pipeline_name: test_pipe
+pipeline_name: example_pipestat_pipeline
 samples:
   number_of_lines:
     type: integer

@@ -1,5 +1,5 @@
-pep_config: project/project_config.yaml
-output_dir: "results"
+pep_config: ./project/project_config.yaml
+output_dir: ./results
 pipeline_interfaces:
   sample:
     - ./pipeline/pipeline_interface1_sample.yaml

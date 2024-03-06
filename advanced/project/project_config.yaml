@@ -8,14 +8,14 @@ looper:
   cli:
     runp:
       pipeline_interfaces:
-      - pipeline/pipeline_interface1_project.yaml
-      - pipeline/pipeline_interface2_project.yaml
+      - ../pipeline/pipeline_interface1_project.yaml
+      - ../pipeline/pipeline_interface2_project.yaml
 sample_modifiers:
   append:
     attr: "val"
     pipeline_interfaces:
-      - pipeline/pipeline_interface1_sample.yaml
-      - pipeline/pipeline_interface2_sample.yaml
+      - ../pipeline/pipeline_interface1_sample.yaml
+      - ../pipeline/pipeline_interface2_sample.yaml
   derive:
     attributes: [read1, read2]
     sources:

@@ -1,4 +1,4 @@
-pipeline_name: example_pipestat_pipeline_2
+pipeline_name: example_pipestat_pipeline
 pipeline_type: sample
 input_schema: https://schema.databio.org/pep/2.0.0.yaml
 output_schema: output_schema.yaml

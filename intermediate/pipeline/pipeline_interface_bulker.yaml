@@ -1,0 +1,11 @@
+pipeline_name: "bulker pi cowsay"
+pipeline_type: sample
+var_templates:
+  bulker1: 'bulker run bulker/pi pi'
+  bulker2: 'bulker run bulker/demo cowsay'
+command_template: >
+  {pipeline.var_templates.bulker1} | {pipeline.var_templates.bulker2}
+
+bulker_crate:
+  - bulker/pi
+  - bulker/demo

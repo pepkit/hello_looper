@@ -1,4 +1,4 @@
-pipeline_name: example_pipestat_count_lines
+pipeline_name: count_lines
 samples:
   number_of_lines:
     type: integer

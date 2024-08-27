@@ -4,12 +4,10 @@ This repository provides minimal working examples for the [looper pipeline submi
 
 This repository contains examples
 
-1. `/minimal` - A basic example pipeline and project.
-2. `/intermediate` - An intermediate example pipeline and project with a couple extra options.
-3. `/advanced` - A more advanced example, showcasing the capabilities of Looper.
-4. `/pephub` - Example of how to point looper to PEPhub.
-5. `/pipestat` - Example of a pipeline that uses pipestat for recording results.
-6. `/csv` - How to use a pipeline with a CSV sample table (no YAML config)
+1. `/looper_csv_example` - A basic example using only csv for metadata.
+2. `/pep_derived_attributes` - An basic example utilizing PEP specification for metadata
+3. `/pephub` - Example of how to point looper to PEPhub.
+4. `/pipestat` - Example of a pipeline that uses pipestat for recording results.
 
 Each example contains:
 

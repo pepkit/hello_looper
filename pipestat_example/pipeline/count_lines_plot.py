@@ -4,7 +4,7 @@ import pipestat
 import sys
 
 # A pipeline that retrieves previously reported pipestat results
-# and plots them in a graph.
+# and plots them in a bar chart
 results_file = sys.argv[1]
 schema_path = sys.argv[2]
 

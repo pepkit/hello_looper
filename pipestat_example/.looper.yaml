@@ -3,5 +3,6 @@ output_dir: ./results
 pipeline_interfaces:
   - pipeline/pipeline_interface.yaml
 pipestat:
+  project_name: count_lines
   results_file_path: results.yaml
   flag_file_dir: results/flags

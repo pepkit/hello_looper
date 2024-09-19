@@ -5,4 +5,4 @@ sample_interface:
     python3 {looper.piface_dir}/count_lines.py {sample.file_path} {sample.sample_name} {pipestat.results_file} {pipestat.output_schema}
 project_interface:
   command_template: >
-    python3 {looper.piface_dir}/make_graph.py {pipestat.results_file} {pipestat.output_schema}
+    python3 {looper.piface_dir}/count_lines_plot.py {pipestat.results_file} {pipestat.output_schema}

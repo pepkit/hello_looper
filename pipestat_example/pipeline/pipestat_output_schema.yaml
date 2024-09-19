@@ -14,7 +14,7 @@ properties:
   project:
     type: object
     properties:
-      regions_graph:
+      regions_plot:
         description: "This a path to the output image"
         image:
           type: object

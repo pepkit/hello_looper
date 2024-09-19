@@ -20,7 +20,7 @@ results = psm.select_records() # pipestat object holds the data after reading th
 countries = [record['record_identifier'] for record in results['records']]
 number_of_regions = [record['number_of_lines'] for record in results['records']]
 
-# Create a bar graph of regions per country
+# Create a bar chart of regions per country
 plt.figure(figsize=(8, 5))
 plt.bar(countries, number_of_regions, color=['blue', 'green', 'purple'])
 plt.xlabel('Countries')
@@ -34,9 +34,9 @@ save_location =  os.path.join(os.path.dirname(results_file), "regions_per_countr
 
 plt.savefig(save_location, dpi=150)
 
-result_to_report = {"regions_graph":
+result_to_report = {"regions_plot":
                         {"path": save_location,
                          "thumbnail_path": save_location,
-                         "title": "regions_plot"}}
+                         "title": "Regions Plot"}}
 
 psm.report(record_identifier="count_lines", values=result_to_report)
